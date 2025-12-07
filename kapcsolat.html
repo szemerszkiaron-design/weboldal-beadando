@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="OkosVilágítás - Spóroljon energiát modern LED megoldásokkal.">
+    <meta name="author" content="Saját Neved">
+    
+    <title>OkosVilágítás</title> 
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">OkosVilágítás</div>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="termekek.html">Termékek</a></li>
+                <li><a href="kalkulator.html">Kalkulátor</a></li>
+                <li><a href="kapcsolat.html" class="active">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Kérjen ingyenes felmérést!</h2>
+            <form id="contactForm" novalidate>
+                
+                <div class="form-group">
+                    <label for="nev">Teljes név:</label>
+                    <input type="text" id="nev" name="nev" placeholder="Pl. Kovács János">
+                    <span class="error-msg" id="error-nev"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" id="email" name="email" placeholder="pelda@email.com">
+                    <span class="error-msg" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Telefonszám:</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="nm">Ingatlan mérete (m²):</label>
+                    <input type="number" id="nm" name="nm" min="10">
+                    <span class="error-msg" id="error-nm"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipus">Ingatlan típusa:</label>
+                    <select id="tipus" name="tipus">
+                        <option value="">Válasszon...</option>
+                        <option value="lakas">Társasházi lakás</option>
+                        <option value="haz">Családi ház</option>
+                        <option value="iroda">Iroda</option>
+                    </select>
+                    <span class="error-msg" id="error-tipus"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Mikor hívhatjuk?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="de" name="hivas" value="de">
+                        <label for="de" class="inline">Délelőtt</label>
+                        <input type="radio" id="du" name="hivas" value="du">
+                        <label for="du" class="inline">Délután</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="adatvedelem" name="adatvedelem">
+                    <label for="adatvedelem" class="inline">Elfogadom az adatvédelmi nyilatkozatot.</label>
+                    <span class="error-msg" id="error-adatvedelem"></span>
+                </div>
+
+                <button type="submit" id="submitBtn">Küldés</button>
+                <p id="successMessage" style="color: green; display: none; margin-top: 10px;">Sikeres küldés!</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OkosVilágítás Kft.</p>
+    </footer>
+
+</body>
+</html>

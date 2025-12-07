@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="OkosVilágítás - Spóroljon energiát modern LED megoldásokkal.">
+    <meta name="author" content="Saját Neved">
+    
+    <title>OkosVilágítás</title> 
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">OkosVilágítás</div>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="termekek.html">Termékek</a></li>
+                <li><a href="kalkulator.html" class="active">Kalkulátor</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>LED Megtérülés Kalkulátor</h2>
+            <p>Számolja ki, mennyit spórolhat okosizzókkal!</p>
+            
+            <div class="calc-box">
+                <label for="izzoDb">Hány darab izzót cserélne le?</label>
+                <input type="number" id="izzoDb" value="5">
+                
+                <label for="wattRegi">Jelenlegi izzók fogyasztása (Watt):</label>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="range" id="wattRegi" min="20" max="100" value="60">
+                    <span id="wattOutput">60</span> W
+                </div>
+                
+                <label for="napiOra">Napi használat (óra):</label>
+                <input type="number" id="napiOra" value="4">
+                
+                <button id="calcBtn">Számolás</button>
+                
+                <div id="eredmeny" style="margin-top: 20px; font-weight: bold; padding: 10px; border-radius: 5px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OkosVilágítás Kft.</p>
+    </footer>
+
+</body>
+</html>
