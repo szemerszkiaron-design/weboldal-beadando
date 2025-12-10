@@ -1,6 +1,6 @@
 [olvassel.txt](https://github.com/user-attachments/files/24018817/olvassel.txt)
 Név: Szemerszki Áron
-Weboldal elérhetősége: [Ide a GitHub link, ha feltöltöd]
+Weboldal elérhetősége: 
 
 Téma leírása:
 A weboldal az okosvilágítás és a LED technológia előnyeit mutatja be. Tartalmaz egy termékbemutatót, egy megtérülés kalkulátort és egy kapcsolatfelvételi űrlapot.
